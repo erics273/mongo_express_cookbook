@@ -13,7 +13,7 @@ const recipeController = {
             
             //use our model to find recipes that match a query.
             //{} is the current query which really mean find all the recipes
-            //we use away here since this is an async process and we want the code to wait for this to finish before moving on to the next line of code
+            //we use await here since this is an async process and we want the code to wait for this to finish before moving on to the next line of code
             let allRecipes = await recipe.find({})
             
             //return all the recipes that we found in JSON format
