@@ -22,7 +22,7 @@ const recipeController = {
         } catch (error) {
 
             //if any code in the try block fails, send the user a HTTP status of 400 and a message stating we could not find any recipes
-            return res.status(400).send("couldn't find your recipes: " + error)
+            res.status(400).send("couldn't find your recipes: " + error)
 
         }
     }
